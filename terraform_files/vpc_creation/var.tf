@@ -15,7 +15,7 @@ variable "region" {
 
 variable "subnets" {
   description = "A map of availability zones to CIDR blocks, which will be set up as subnets."
-  type = "map"
+  type        = string
 }
 
 variable "vpc_name" {
