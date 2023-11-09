@@ -3,7 +3,7 @@ module "my_vpc" {
     vpc_cidr_block = var.vpc_cidr_block
     vpc_name       = var.vpc_name
     region =  var.region
-    igw_name = my-igw
+    igw_name = var.igw_name
     route_table_cidr1 = var.route_table_cidr1
     route_table_cidr2 = var.route_table_cidr2
     subnets = "var.subnet_cidr_blocks"

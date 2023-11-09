@@ -91,3 +91,9 @@ variable "destination_cidr_block2" {
     default = null
 }
 
+# variable "igw_name" {
+
+#     description = "internetgatway"
+
+#     default = null
+# }
