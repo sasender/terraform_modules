@@ -47,13 +47,13 @@ route_table_id = aws_route_table.tera_out.id
 destination_cidr_block  = var.route_table_cidr1
 gateway_id = aws_internet_gateway.internet_gateway1.id
 }
-resource "aws_route" "transit-gateway_route_public_subnet1" {
-route_table_id = aws_route_table.tera_out.id
-#destination_cidr_block = "172.31.32.0/20"
-destination_cidr_block  = var.route_table_cidr2
-depends_on            = aws_ec2_transit_gateway.example.id
-transit_gateway_id = aws_ec2_transit_gateway.example.id
-}
+# resource "aws_route" "transit-gateway_route_public_subnet1" {
+# # route_table_id = aws_route_table.tera_out.id
+# # #destination_cidr_block = "172.31.32.0/20"
+# # destination_cidr_block  = var.route_table_cidr2
+# # depends_on            = aws_ec2_transit_gateway.example.id
+# # transit_gateway_id = aws_ec2_transit_gateway.example.id
+# # }
 
 resource "aws_security_group" "allowIn" {
 name = "allow_inbound"
