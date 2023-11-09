@@ -10,3 +10,4 @@ destination_cidr_block1 = 172.32.14.15/20  ###vpn cider range
 destination_cidr_block2 = 10.0.0.1/24  ### vpc cidrranges 
 route_table_cidr1 = 0.0.0.0/0
 route_table_cidr2 = 172.32.14.15/20
+

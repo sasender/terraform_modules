@@ -3,10 +3,15 @@ variable "vpc_cidr_block" {
   type        = string
 }
 
+# variable "subnet_cidr_blocks" {
+#   description = "List of CIDR blocks for VPC subnets"
+#   type        = list(string)
+# }
 variable "subnet_cidr_blocks" {
   description = "List of CIDR blocks for VPC subnets"
-  type        = list(string)
+  default  = null
 }
+
 
 variable "region" {
   description = "The AWS region for the VPC"
