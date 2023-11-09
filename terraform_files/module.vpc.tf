@@ -8,7 +8,7 @@ module "my_vpc" {
     route_table_cidr2 = var.route_table_cidr2
     subnets = "var.subnet_cidr_blocks"
     subnet_cidr_blocks = {
-    "subnet" = var.subnet_cidr_blocks
+    "subnet" = "var.subnet_cidr_blocks"
   }
   
 
