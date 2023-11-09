@@ -27,3 +27,10 @@ variable "destination_cidr_block2" {
   description = "Second destination CIDR block for the route"
   type        = string
 }
+
+variable "subnet_ids" {
+  description = "added the exstig subnet"
+  default = null
+}
+
+

@@ -5,4 +5,5 @@ module "my_vpn" {
     transit_gateway_name = var.transit_gateway_name
     destination_cidr_block1 = var.destination_cidr_block1
     destination_cidr_block2 = var.destination_cidr_block2
+    subnet_ids               = module.vpc.var.subnet_cidr_blocks
 }
